@@ -57,3 +57,12 @@ class WebSearch:
         self.cx_id = "<CX_ID>"
 
 
+---
+```
+---
+
+## ▶️ Running the App
+
+cd chatbot_webapp
+fastapi dev First.py
+
