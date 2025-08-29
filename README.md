@@ -41,10 +41,7 @@ huggingface-cli download meta-llama/Llama-3.2-3B-Instruct \
 
 ---
 
-### ✅ Step 4: Google Custom Search Setup
-Now paste this **separately** (not inside the Python code block):
-
-```markdown
+```
 ---
 
 ## 🌐 Google Custom Search Setup
