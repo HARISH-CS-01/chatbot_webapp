@@ -36,6 +36,7 @@ snapshot_download(
 huggingface-cli download meta-llama/Llama-3.2-3B-Instruct \
   --local-dir ./chatbot_webapp/models/llama-3.2-3b-instruct
 
+---
 
 ## 🌐 Google Custom Search Setup
 
@@ -49,3 +50,4 @@ class WebSearch:
     def __init__(self):
         self.api_key = "<API_KEY>"
         self.cx_id = "<CX_ID>"
+
