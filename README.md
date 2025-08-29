@@ -35,13 +35,29 @@ snapshot_download(
 huggingface-cli download meta-llama/Llama-3.2-3B-Instruct \
   --local-dir ./chatbot_webapp/models/llama-3.2-3b-instruct
 
+
+
+👉 Notice: both code blocks (`python` and `bash`) **end with ```** before the next section starts.
+
 ---
 
-**🌐 Google Custom Search Setup**
-For enabling Internet Mode:
-Go to Google CSE and create a search engine (set it to search the entire web).
-Note down:
-api_key → from Google Cloud Console
-cx_id → from your CSE dashboard.
-Open web_search.py and update the WebSearch class with your credentials:
+### ✅ Step 4: Google Custom Search Setup
+Now paste this **separately** (not inside the Python code block):
 
+```markdown
+---
+
+## 🌐 Google Custom Search Setup
+For enabling **Internet Mode**:
+
+1. Go to [Google CSE](https://programmablesearchengine.google.com/) and create a search engine (set it to search the entire web).  
+2. Note down:  
+   - `api_key` → from [Google Cloud Console](https://console.cloud.google.com/)  
+   - `cx_id` → from your CSE dashboard.  
+3. Open `web_search.py` and update the `WebSearch` class with your credentials:  
+
+```python
+class WebSearch:
+    def __init__(self):
+        self.api_key = "<API_KEY>"
+        self.cx_id = "<CX_ID>"
