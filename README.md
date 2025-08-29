@@ -37,10 +37,11 @@ huggingface-cli download meta-llama/Llama-3.2-3B-Instruct \
 
 ---
 
-🌐 Google Custom Search Setup
+**🌐 Google Custom Search Setup**
 For enabling Internet Mode:
 Go to Google CSE and create a search engine (set it to search the entire web).
 Note down:
 api_key → from Google Cloud Console
 cx_id → from your CSE dashboard.
 Open web_search.py and update the WebSearch class with your credentials:
+
