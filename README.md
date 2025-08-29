@@ -29,11 +29,11 @@ from huggingface_hub import snapshot_download
 # Downloads model into ./chatbot_webapp/models/llama-3.2-3b-instruct
 snapshot_download(
     repo_id="meta-llama/Llama-3.2-3B-Instruct",
-    local_dir="chatbot_webapp/models/llama-3.2-3b-instruct"
+    local_dir="chatbot_webapp/Models3.2"
 )
 
 huggingface-cli download meta-llama/Llama-3.2-3B-Instruct \
-  --local-dir ./chatbot_webapp/models/llama-3.2-3b-instruct
+  --local-dir ./chatbot_webapp/Models3.2
 
 
 ---
@@ -55,4 +55,5 @@ class WebSearch:
     def __init__(self):
         self.api_key = "<API_KEY>"
         self.cx_id = "<CX_ID>"
+
 
