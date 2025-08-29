@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat with AILion</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <div class="main-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <button id="new-chat" class="new-chat-btn">+ New Chat</button>
+      <ul id="chat-list" class="chat-list"></ul>
+    </div>
+
+    <!-- Chat UI -->
+    <div class="chat-container">
+      <div class="chat-header" id="chat-header">💬 Chat with AILion</div>
+      <div class="chat-box" id="chat-box"></div>
+
+      <!-- Chat Form -->
+      <form id="chat-form">
+        <textarea id="user-input" placeholder="Type a message..." autocomplete="off" required rows="1" style="resize:none;"></textarea>
+        
+        <!-- Internet Search Toggle -->
+        <label class="internet-toggle">
+          <input type="checkbox" id="internet-option" />
+          🌐 Internet
+        </label>
+
+        <button type="submit" id="send-btn">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
