@@ -38,7 +38,7 @@ huggingface-cli download meta-llama/Llama-3.2-3B-Instruct \
 
 ---
 
-## 🌐 Google Custom Search Setup
+### 🌐 Google Custom Search Setup
 
 For enabling Internet Mode:
 Go to Google CSE and create a search engine (set it to search the entire web).
@@ -50,4 +50,5 @@ class WebSearch:
     def __init__(self):
         self.api_key = "<API_KEY>"
         self.cx_id = "<CX_ID>"
+
 
